@@ -16,7 +16,7 @@ def crawling(url):
     return data
 
 def txtFile(contents):
-    writer = open("C:/Users/wnsgu/Desktop/news.txt", 
+    writer = open("/home/pjh/test/news.txt", 
                   "w", 
                   encoding="UTF-8")
 
@@ -24,7 +24,7 @@ def txtFile(contents):
         writer.write(content.text + "\n")
     
 
-url = "https://m.blog.naver.com/PostView.naver?blogId=sj3589&logNo=223482808543&fromRecommendationType=category&targetRecommendationDetailCode=2"
+url = "https://m.blog.naver.com/sj3589/223496946522?referrerCode=1"
 
 news = crawling(url)
 txtFile(news)
